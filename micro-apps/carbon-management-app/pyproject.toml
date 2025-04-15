@@ -1,16 +1,20 @@
 [tool.poetry]
-name = "micro-apps"
+name = "carbon-management-app"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["nathantgray <nathantgray@gmail.com>"]
 readme = "README.md"
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
-gridappsd-python = "^2023.12.1"
+gridappsd-python = {version = "^2024", allow-prereleases = true}
 cim-graph = "^0.1.2a0"
 cvxpy = "^1.5.2"
 tabulate = "^0.9.0"
+plotly = "^5.24.0"
+kaleido = "0.2.1"
+pandas = "^2.2.2"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.6.0"
@@ -35,6 +39,7 @@ split_before_logical_operator = true
 show_error_context = true
 pretty = true
 show_column_numbers = true
+
 
 [build-system]
 requires = ["poetry-core"]
